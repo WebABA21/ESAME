@@ -232,6 +232,9 @@ input{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
 }
 
 .curi h1{
@@ -270,6 +273,9 @@ input{
   align-items: center;
 }
 
+.testo p{
+  width: 700px;
+}
 
 .intro{
   display: flex;
