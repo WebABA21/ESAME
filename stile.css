@@ -1,0 +1,541 @@
+body{
+    font-family: 'Diphylleia', serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    top: 0%;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+
+.menù {
+    display: flex;
+    margin-right: 50px;
+  }
+  
+  .indoor .submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .indoor:hover .submenu {
+    display: block;
+    background-color: white;
+  padding: 15px;
+  border-radius: 10%;
+  }
+  
+  .menù a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    align-items: baseline;
+  }
+  
+  .indoor .submenu a {
+    display: block;
+  }
+
+  .outdoor {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+  }
+  
+  .outdoor .submenu2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .outdoor:hover .submenu2 {
+    display: block;
+    background-color: white;
+    padding: 15px;
+  border-radius: 10%;
+  }
+  
+  .outdoor, .indoor, .menù a {
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    margin-left: 10px;
+  }
+  
+  .outdoor .submenu2 a {
+    display: block;
+  }
+
+  .submenu a{
+    font-size: 18pt;
+    margin-bottom: 5px;
+  }
+
+  .submenu2 a{
+    font-size: 18pt;
+    margin-bottom: 5px;
+  }
+
+.nome a{
+    font-size: 40px ;
+    padding: auto;
+    font-family: 'Diphylleia', serif;
+    margin-left: 100px;
+    margin-top: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.boxa{
+  margin-top: 50px;
+  width: 1000px;
+  margin: auto;
+}
+
+.boxa h3{
+  font-size: 25pt;
+  text-align: center;
+}
+
+.boxa p{
+  font-size: 18pt;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 700px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+}
+
+label{
+  font-size: 18pt;
+}
+
+input{
+  font-size: 18pt;
+  width: 200px;
+}
+
+.image-container {
+  margin-top: 200px;
+  margin-left: 100px;
+  width: 700px; 
+  height: 700px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.cerchio {
+  width: 750px;
+  height: 750px; 
+  border-radius: 50%; 
+  background-color: #B2CBA6;
+  margin-top: -725px;
+  margin-left: 110px;
+}
+
+.ellisse {
+  width: 500px;
+  height: 400px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: #B2CBA6;
+  margin-top: -325px;
+  right: 0%;
+  position: static;
+  z-index: -1;
+}
+
+.nomep h1{
+  margin-top: 500px;
+  position: relative;
+  right: 40%;
+  font-size: 75pt;
+}
+
+.org {
+  margin-top: 50px;
+}
+
+.tit h1{
+  font-size: 24pt;
+  margin-bottom: 100px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.par{
+  margin-top: -50px;
+}
+
+.org p{
+  font-size: 18pt;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.cura h1{
+  font-size: 20pt;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.cura p{
+  font-size: 18pt;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-left: 20%;
+}
+
+.imgcur {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7%;
+}
+
+.imgcur img{
+  width: auto;
+  height: 550px;
+  margin-bottom: 50px;
+  border-radius: 10%;
+}
+
+.cura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.curi h1{
+  font-size: 20pt;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.curi p{
+  font-size: 18pt;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-left: 20%;
+}
+
+.imgcuri {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7%;
+}
+
+.imgcuri img{
+  width: 445px;
+  height: 550px;
+  margin-bottom: 50px;
+  border-radius: 10%;
+}
+
+.curi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img{
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+.img img {
+    max-width: 100%;
+  }
+
+  .img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    margin-left: 320px;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 50pt;
+  }
+
+.box p{
+  width: 60%;
+}
+
+.box3 p{
+  width: 50%;
+margin: auto;
+margin-top: 5%;
+margin-bottom: 5%;
+font-size: 18pt;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box2 img{
+    max-width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    object-fit:contain;
+    margin: 100px;
+}
+
+.container{
+    margin: 20px;
+   text-align: center;
+   justify-items: center;
+    align-items: center;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.box a, h3{
+  font-size: 24pt;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.box2 img{
+  box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.container .box h3{
+    font-family: 'Kaisei Decol', serif;
+}
+
+.container a, h3, p {
+  
+    display: flex;
+   padding: 10px;
+
+}
+
+.container p{
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+}
+
+.sezin a{
+  font-size: 17pt;
+    font-family: 'Diphylleia', serif;
+    text-decoration: none;
+    color: black;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.elm1 img,
+.elm2 img {
+  height: 700px;
+  width: 500px;
+  object-fit: cover;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.elm1 a,
+.elm2 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20pt;
+  color: black;
+  background-color: #D9D9D9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  margin-bottom: 50px;
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.gallery img {
+  width: 500px;
+  height: 550px;
+  border-radius: 10%;
+}
+
+.gallery2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.gallery2 img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  font-size: 18pt;
+}
+
+.check1{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.check2{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-right: 35px;
+}
+
+.checklist {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.checklist h1{
+  margin: auto;
+  margin-top: 150px;
+  font-size: 20pt;
+}
+
+.form2{
+  margin: auto;
+}
+
+.checklist h2{
+  margin: auto;
+  margin-top: 50px;
+  font-size: 20pt;
+}
+
+.checklist input{
+  margin: auto;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.news img{
+  height: auto;
+  width: 700px;
+  border-radius: 10%;
+  margin-left: 100px;
+}
+
+.news{
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  margin-top: 50px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+footer{
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    font-family:'Diphylleia', serif ;
+}
+
+.tasfoot ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 50px;
+}
+.tasfoot a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: black;
+}
+
+.intro p{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    padding: 40px;
+}
