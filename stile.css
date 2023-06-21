@@ -48,7 +48,7 @@ header {
     display: block;
     background-color:rgba(217, 217, 217, 0.45);
     padding: 10px;
-    border-radius: 10px;
+    border-radius:  0 0 10px 10px;
   }
   
   .menù a {
@@ -216,6 +216,7 @@ input{
 .image-container img {
   width: 100%;
   height: auto;
+
 }
 
 .cerchio {
@@ -303,6 +304,8 @@ input{
   height: 550px;
   margin-bottom: 50px;
   border-radius: 7%;
+
+  object-fit: cover;
 }
 
 .imgcurs {
@@ -315,6 +318,8 @@ input{
   height: 550px;
   margin-bottom: 50px;
   border-radius: 7%;
+
+  object-fit: cover;
 }
 
 .cura {
@@ -352,6 +357,8 @@ input{
   height: 550px;
   margin-bottom: 50px;
   border-radius: 7%;
+
+  object-fit: cover;
 }
 
 .curi {
@@ -460,8 +467,6 @@ input{
      height: 50px;
     border-radius: 5%;
     }
-
-
   }
   
   .overlay {
@@ -647,7 +652,8 @@ margin: 30px;
   height: 550px;
   border-radius: 5%;
 
-  object-fit: contain;
+  object-fit: cover;
+
 }
 
 .gallery2 {
