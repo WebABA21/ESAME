@@ -1,7 +1,11 @@
 body{
     font-family: 'Diphylleia', serif;
 }
-
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
 header {
     position: fixed;
     display: flex;
@@ -11,14 +15,29 @@ header {
     padding: 20px;
     width: 100%;
     background-color: white;
-    z-index: 999;
+    z-index: 1;
+}
+@media (max-width:500px){
+  header{
+      height: 3%;
+      width: 100%;
+  }
+  header h1 {
+      font-size: 40px;
+  } header .button{
+      font-size: 15px;
+  }
 }
 
 .menù {
     display: flex;
     margin-right: 50px;
   }
-  
+ 
+
+  #link a {
+    margin: 15px;
+  }
   .indoor .submenu {
     display: none;
     position: absolute;
@@ -27,20 +46,39 @@ header {
   
   .indoor:hover .submenu {
     display: block;
-    background-color: white;
-  padding: 15px;
-  border-radius: 10%;
+    background-color:rgba(217, 217, 217, 0.45);
+    padding: 10px;
+    border-radius: 10px;
   }
   
   .menù a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-right: 20px;
     align-items: baseline;
   }
-  
+  @media (max-width: 500px) {
+   .menù{
+    display: flex;
+    margin-left: 35px;
+   }
+    .menù a {  
+      font-size: 25px;      
+    margin: 5px;
+    }
+    .outdoor a {  
+      font-size: 25px;
+      margin-left: 10%;
+      margin: 5px;
+    }
+
+  }
   .indoor .submenu a {
     display: block;
+  }
+
+nav a{
+    font-size: 20pt;
   }
 
   .outdoor {
@@ -57,30 +95,43 @@ header {
   
   .outdoor:hover .submenu2 {
     display: block;
-    background-color: white;
-    padding: 15px;
-  border-radius: 10%;
+    
+    background-color: rgba(217, 217, 217, 0.45);   
+    padding: 10px;
+    border-radius:  0 0 10px 10px;
   }
   
-  .outdoor, .indoor, .menù a {
+  .outdoor a {
     text-decoration: none;
     color: black;
-    font-size: 20pt;
-    margin-left: 10px;
+   /* padding: 8px 16px;*/
   }
   
   .outdoor .submenu2 a {
     display: block;
   }
 
-  .submenu a{
-    font-size: 18pt;
-    margin-bottom: 5px;
+  .outdoor a{
+    font-size: 20pt;
   }
+  @media (max-width: 500px) {
+    .menù{
+  
+    text-align: center;
+    display: flex;}
+    .menù a {  
+      font-size: 16px;
+      display: block;
+      white-space: nowrap;
+    text-align: center;
+    }
+    .outdoor a {  
+      font-size: 16px;
+      display: block;
+      white-space: nowrap;
+    text-align: center;
+    }
 
-  .submenu2 a{
-    font-size: 18pt;
-    margin-bottom: 5px;
   }
 
 .nome a{
@@ -91,6 +142,24 @@ header {
     margin-top: 100px;
     text-decoration: none;
     color: black;
+}
+@media (max-width: 500px) {
+  .nome a{   margin-left: -10px;
+  }
+}
+.boxc{
+  text-align: center;
+  margin-top: 50px;
+  width: 500px;
+  margin: auto;
+}
+
+.boxc h3{
+  font-size: 25pt;
+}
+
+.boxc p{
+  font-size: 18pt;
 }
 
 .boxa{
@@ -160,21 +229,32 @@ input{
 
 .ellisse {
   width: 500px;
-  height: 400px;
+  height: 500px;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   background-color: #B2CBA6;
-  margin-top: -325px;
+  margin-top: -365px;
   right: 0%;
-  position: static;
+  position: absolute;
   z-index: -1;
+
+  clip-path: ellipse(50% 20%);
+
 }
+
 
 .nomep h1{
   margin-top: 500px;
   position: relative;
-  right: 40%;
-  font-size: 75pt;
+  right: 73%;
+  font-size: 70pt;
+}
+
+.nomepia h1{
+  margin-top: 500px;
+  position: relative;
+  right: 30%;
+  font-size: 70pt;
 }
 
 .org {
@@ -182,25 +262,22 @@ input{
 }
 
 .tit h1{
-  font-size: 24pt;
-  margin-bottom: 100px;
-  margin-top: 150px;
+  font-size: 25pt;
+  margin-bottom: 30px;
   text-align: center;
-}
-
-.par{
-  margin-top: -50px;
+  padding: 10px;
+ color: rgba(42, 71, 33, 1)
 }
 
 .org p{
-  font-size: 18pt;
-  width: 1000px;
+  font-size: 16pt;
+  width: 800px;
   margin: auto;
   margin-bottom: 10px;
 }
 
 .cura h1{
-  font-size: 20pt;
+  font-size: 25pt;
   width: 1000px;
   margin: auto;
   margin-bottom: 20px;
@@ -208,10 +285,10 @@ input{
 }
 
 .cura p{
-  font-size: 18pt;
-  width: 1000px;
+  font-size: 16pt;
+  width: 800px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-left: 20%;
 }
 
@@ -225,20 +302,29 @@ input{
   width: auto;
   height: 550px;
   margin-bottom: 50px;
-  border-radius: 10%;
+  border-radius: 7%;
+}
+
+.imgcurs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7%;
+}
+.imgcurs img{
+  width: 450px;
+  height: 550px;
+  margin-bottom: 50px;
+  border-radius: 7%;
 }
 
 .cura {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
-  align-items: center;
 }
 
 .curi h1{
-  font-size: 20pt;
+  font-size: 25pt;
   width: 1000px;
   margin: auto;
   margin-bottom: 20px;
@@ -246,11 +332,12 @@ input{
 }
 
 .curi p{
-  font-size: 18pt;
-  width: 1000px;
+  font-size: 16pt;
+  width: 800px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-left: 20%;
+
 }
 
 .imgcuri {
@@ -259,23 +346,20 @@ input{
   margin-right: 7%;
 }
 
+
 .imgcuri img{
   width: 445px;
   height: 550px;
   margin-bottom: 50px;
-  border-radius: 10%;
+  border-radius: 7%;
 }
 
 .curi {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
-.testo p{
-  width: 700px;
-}
 
 .intro{
   display: flex;
@@ -288,6 +372,7 @@ input{
     text-align: center;
     color: black;
   }
+ 
 
 .img img {
     max-width: 100%;
@@ -297,6 +382,86 @@ input{
     position: relative;
     display: inline-block;
     width: 100%;
+  }
+  @media (max-width: 500px) {
+    .img{
+      margin: 0%;
+      padding-top: 50px;
+      width: 570px;
+      height: 100%;
+    }
+    .tit h1{
+      font-size: 14pt;
+    }
+    .org p{
+      width: auto;
+      font-size: 10pt;
+    }
+    .cura h1{
+      font-size: 10pt;
+      width: auto;
+    }
+    
+    .cura p{
+      font-size: 7pt;
+      width: auto;
+    
+    }
+    .imgcur{ margin-top: 100px;
+    }
+    .imgcur img{
+      margin: 0%;
+   
+      width: auto;
+      height: 180px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 7%;
+    }
+    .testo{
+      width: 250px;
+    }
+    .curi h1{
+      
+      font-size: 10pt;
+    }
+    
+    .curi p{
+      font-size: 7pt;
+      width: 250px;
+      margin: 5px;
+    }
+    
+    .imgcuri {
+      display: flex;
+      flex-direction: column;
+ 
+    }
+    .imgcuri img{
+      width: auto;
+      height: 180px;
+
+      border-radius: 7%;
+    }
+    .gallery{
+      display: column;
+    }
+    .gallery img {
+     width: 50px;
+     height: 50px;
+    border-radius: 5%;
+    }
+    .gallery2{
+      width:50px;
+      height: 50px;
+    }
+    .gallery2 img {
+     width: 50px;
+     height: 50px;
+    border-radius: 5%;
+    }
+
+
   }
   
   .overlay {
@@ -308,8 +473,10 @@ input{
     font-size: 50pt;
   }
 
-.box p{
+.container .box p{
+ margin-left:180px;
   width: 60%;
+  height: 150px;
 }
 
 .box3 p{
@@ -321,12 +488,11 @@ font-size: 18pt;
 }
 
 .box {
-  display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.box2 img{
+.container .box2 img{
     max-width: 80%;
     border-radius: 10px 10px 10px 10px;
     object-fit:contain;
@@ -343,34 +509,28 @@ font-size: 18pt;
     grid-template-columns: auto auto auto;
     padding: 10px;
 }
+.container > div{
 
-.box a, h3{
-  font-size: 24pt;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+  display: flex;
+  flex-direction: row ;
 }
-
-.box2 img{
-  box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.4);
-}
-
-.container .box h3{
+.container >div .box h3{
     font-family: 'Kaisei Decol', serif;
+    font-size: 30px;
 }
 
-.container a, h3, p {
-  
+.container >div h3 p {
     display: flex;
-   padding: 10px;
-
+   padding: 40px;
+margin: 30px;
 }
 
-.container p{
+.container >div p{
     font-size: 17px;
     text-align: center;
     margin: 15px;
 }
+
 
 .sezin a{
   font-size: 17pt;
@@ -378,52 +538,116 @@ font-size: 18pt;
     text-decoration: none;
     color: black;
 }
+@media (max-width: 500px) {
+    
+  .container {    
+  
+
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+     align-items: center;
+    
+/*
+     grid-template-columns: auto auto auto;
+  */
+     margin: 10px;
+  }/*
+.container  > div .box{
+  }*/
+  .box {
+    
+    width: 200px;
+    margin: -10px;
+  }
+  
+  
+  .container .box h3 {
+      font-size: 20px;
+     margin:0px;
+  }
+  .container .box p{
+    font-size: 13px;
+  width: 200px;
+
+  margin-top: 5px;
+  margin-left: auto;
+}
+.box2 img{
+  max-width: 200px;
+  border-radius: 10px 10px 10px 10px;
+ /* object-fit:contain;*/
+ margin:10px;
+}
+.sezin a{
+  font-family: 'Diphylleia', serif;
+  font-size: 13px;
+  width: 200px;
+  margin:0px;
+  margin: 5px, 10px,0px,0px;
+}
+}
 
 .tab {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
 
-.elm1 img,
-.elm2 img {
-  height: 700px;
-  width: 500px;
-  object-fit: cover;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+.elm1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.elm1 a,
-.elm2 a {
-  display: block;
+.elm2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.elm1 a{
   text-align: center;
-  text-decoration: none;
-  font-size: 20pt;
-  color: black;
   background-color: #D9D9D9;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30%;
-  margin-bottom: 50px;
+  padding: 15px;
+  margin-top: 0%;
+  font-size: 18pt;
+  text-decoration: none;
+  color: black;
 }
 
+.elm2 a{
+  text-align: center;
+  background-color: #D9D9D9;
+  padding: 15px;
+  margin-top: 0%;
+    font-size: 18pt;
+  text-decoration: none;
+  color: black;
+}
+
+.tab img{
+  max-width: 500px;
+  height: 700px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
 
 .gallery {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  margin: 70px;
+
 }
 
 .gallery img {
   width: 500px;
   height: 550px;
-  border-radius: 10%;
+  border-radius: 5%;
+
+  object-fit: contain;
 }
 
 .gallery2 {
@@ -474,18 +698,12 @@ label {
 
 .checklist h1{
   margin: auto;
-  margin-top: 150px;
+  margin-top: 150px; 
   font-size: 20pt;
 }
 
 .form2{
   margin: auto;
-}
-
-.checklist h2{
-  margin: auto;
-  margin-top: 50px;
-  font-size: 20pt;
 }
 
 .checklist input{
@@ -514,6 +732,46 @@ input[type="checkbox"] {
   justify-content: space-between;
 }
 
+@media (max-width: 500px) {
+ 
+ .intro{
+  width: 500px;
+  height: 500px;
+}
+
+.sx{
+  width: 250px;
+  height: 500px;
+  margin-left: -70px;
+}.sx .image-container{
+  width: 200px;
+height: 200px;
+}
+.cerchio{
+  width: 200px;
+  height: 200px; 
+border-radius: 50%; 
+background-color: #B2CBA6;
+margin-top: -200px;
+  margin-left: 110px;
+}
+.dx{
+  width: 250px;
+  height: 500px;
+}.dx .ellisse{
+  width: 100px;
+  height: 100px;
+  margin-top: -75px;
+  margin-right: 50px;
+  right: 0%;
+}
+.dx .nomep h1{  margin-top: 250px;
+  position: relative;
+left: 22%;
+  font-size: 14pt;
+}
+
+}
 footer{
     max-width: 100%;
     text-align: center;
@@ -545,3 +803,19 @@ footer{
     margin: 30px;
     padding: 40px;
 }
+@media (max-width: 500px) {
+.footer{
+  width: 500px;
+  height: 600px;
+}
+  .tasfoot ul li {
+    list-style: none;
+    display: inline-block;
+   padding: 0px 20px;
+}
+.tasfoot a{
+  font-size: 16px;
+}
+}
+
+
