@@ -20,7 +20,8 @@ header {
 @media (max-width:500px){
   header{
       height: 3%;
-      width: 100%;
+      width: max-content;
+      padding-bottom: 30px;
   }
   header h1 {
       font-size: 40px;
@@ -61,6 +62,7 @@ header {
    .menù{
     display: flex;
     margin-left: 35px;
+    padding-bottom: 10px;
    }
     .menù a {  
       font-size: 25px;      
@@ -118,7 +120,8 @@ nav a{
     .menù{
   
     text-align: center;
-    display: flex;}
+    display: flex;
+  width: max-content;}
     .menù a {  
       font-size: 16px;
       display: block;
@@ -394,7 +397,7 @@ input{
     .img{
       margin: 0%;
       padding-top: 50px;
-      width: 570px;
+      width: 500px;
       height: 100%;
     }
     .tit h1{
@@ -491,6 +494,59 @@ margin-top: 5%;
 margin-bottom: 5%;
 font-size: 18pt;
 }
+@media (max-width: 500px) {
+  .overlay{
+    font-size: 40px;
+    margin-left: 80px;
+    width: 100px;
+  }
+.box3 p{
+  text-align: center;
+  padding-left: 40px;
+  font-size: 10pt;
+      width: 400px;
+      margin: 5px;
+}
+.tab{    
+  flex-direction:column;
+}
+
+.tab .elm1{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10PX;
+  align-items: center;
+
+}
+.tab .elm2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.tab .elm1 a{
+  font-size: 15px;
+  width: 200px;
+}
+.tab .elm1 img{
+  max-width: 200px;
+  height: auto;
+}
+.tab .elm2{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10PX;
+}
+.tab .elm2 img{
+  max-width: 200px;
+  height: auto;
+  object-fit: cover; }
+  .tab .elm2 a{
+    font-size: 15px;
+    width: 200px;
+ 
+}
+}
 
 .box {
   align-items: center;
@@ -546,24 +602,27 @@ margin: 30px;
 @media (max-width: 500px) {
     
   .container {    
-  
-
+    display: flex;
+    flex-direction: row;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     justify-items: center;
-     align-items: center;
     
-/*
-     grid-template-columns: auto auto auto;
-  */
      margin: 10px;
-  }/*
-.container  > div .box{
-  }*/
-  .box {
+      border-bottom-style: solid;
+     border-bottom-color: rgb(25, 77, 16);
+     border-bottom-width: 1px;
+     padding-bottom: 20px;
+
+     height: min-content;
+     
+  }
+ .container .box {
     
-    width: 200px;
-    margin: -10px;
+    width: 400px;
+    
+   
   }
   
   
@@ -572,67 +631,81 @@ margin: 30px;
      margin:0px;
   }
   .container .box p{
+    height:auto;
+    align-items: center;
     font-size: 13px;
-  width: 200px;
+  width: 400px;
+  margin-top: 5px;  
+ margin-left:0px;
 
-  margin-top: 5px;
-  margin-left: auto;
 }
-.box2 img{
+
+.container .box2  img{
   max-width: 200px;
   border-radius: 10px 10px 10px 10px;
  /* object-fit:contain;*/
- margin:10px;
+
+margin: 0px;
+}
+.sezin {
+    
+  width: 400px;
+}
+.sezin >div {
+    
+  width: 400px;
+ 
 }
 .sezin a{
   font-family: 'Diphylleia', serif;
   font-size: 13px;
-  width: 200px;
-  margin:0px;
-  margin: 5px, 10px,0px,0px;
+  width: 400px;
+  padding-top: 10px;
 }
 }
 
 .tab {
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap ;
   justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 5%;
 }
 
-.elm1 {
+.elm1 >div{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.elm2 >div{
   display: flex;
   flex-direction: column;
 }
 
-.elm2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.elm1 a{
+.elm1 >div a{
   text-align: center;
   background-color: #D9D9D9;
-  padding: 15px;
+  /*padding: 15px;*/
+ 
   margin-top: 0%;
   font-size: 18pt;
   text-decoration: none;
   color: black;
 }
 
-.elm2 a{
+.elm2 div >a{
   text-align: center;
   background-color: #D9D9D9;
-  padding: 15px;
+  /*padding: 15px;*/
   margin-top: 0%;
     font-size: 18pt;
   text-decoration: none;
   color: black;
 }
 
-.tab img{
+.tab >div img{
   max-width: 500px;
   height: 700px;
   border-top-left-radius: 5%;
@@ -658,9 +731,21 @@ margin: 30px;
 
 .gallery2 {
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-between;
   margin-bottom: 50px;
   margin-top: 50px;
+margin-right: 50px;
+}
+
+.gallery2 >div{
+ object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-top: 50px;
+margin-right: 50px;
+margin-left: 250px;
 }
 
 .gallery2 img {
@@ -670,10 +755,43 @@ margin: 30px;
   margin-left: 50px;
   margin-right: 50px;
 }
-
+@media (max-width: 500px) {
+  .boxa{
+    width: 500px;
+    height: auto;
+  }
+  .boxa h3{
+    font-size: 15px;
+  }
+  .boxa p{
+    font-size: 13px;
+  }
+  .gallery2{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 500px;
+    height: fit-content;
+   align-items: center;
+  }
+  .gallery2 >div{
+    margin-left:0px;
+    padding-left: 40px;
+    width: 500px;
+   align-items: center;
+  }
+.gallery2 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+margin-right: 15px;
+margin-left: 0px;
+  }}
 .checkbox-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
 }
 
 label {
@@ -682,14 +800,14 @@ label {
 
 .check1{
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
   align-items: baseline;
   justify-content: space-between;
 }
 
 .check2{
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
   align-items: baseline;
   justify-content: space-between;
   margin-right: 35px;
@@ -737,6 +855,82 @@ input[type="checkbox"] {
   margin: auto;
   justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+  .checklist{
+    width: 500px;
+    margin-top: -50px;
+  }
+.news{
+  display: flex;
+  flex-direction: column;}
+  .news img{align-items: center;
+    max-width: 400px;
+    padding-top: 20px;
+    height: auto;
+    padding-left: 0px;
+    margin-left: 0px;
+
+  }
+  .checklist{
+    font-size: 13px;
+    width: 500px;
+  }
+  form{
+    font-size: 13px;
+    width: 500px;
+  }
+  .form2{
+    margin-top: -20px;
+    font-size: 13px;
+    width: 500px;
+  }
+ label{
+    font-size: 13px;
+  }
+ #weekly{
+    margin-left: 45px;
+  }
+  .check1 .checkbox-container{
+    width: 400px;
+   }
+   .check2 .checkbox-container{ 
+    margin-right: -15px;
+    width: 450px;
+      }
+      h2{
+        font-size: 13px;
+      }
+     label{
+      width: 150px;
+     }
+     input{
+      width: 150px;
+      font-size: 13px;
+     }
+     .boxc h1{
+      font-size: 20px;
+     }
+     .form >div{
+      display: flex;  flex-wrap: wrap;  
+  text-align: center;
+     
+
+     }
+     label .message{
+      padding-bottom: -10px;
+     }
+     .form{
+     padding: 20px;
+     }
+     textarea{width: 130px;
+    height: 17px;}
+  
+    
+  
+     
+}
+
 
 @media (max-width: 500px) {
  
