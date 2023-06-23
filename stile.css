@@ -658,7 +658,7 @@ margin: 0px;
   justify-content: space-between;
   margin-bottom: 50px;
   margin-top: 50px;
-margin-right: 50px;
+margin-left: 200px;
 }
 
 .gallery2 >div{
@@ -680,12 +680,13 @@ margin-left: 250px;
   object-fit: cover;
 }
 @media (max-width: 500px) {
-  /*.img{
+  .img{
      margin: 0%;
+     margin-left: 5px;
      padding-top: 50px;
-     width: 500px;
+     width: 470px;
      height: 100%;
-   }*/
+   }
    .tit h1{
      font-size: 14pt;
    }
@@ -762,7 +763,7 @@ margin-left: 250px;
     
    border-radius: 10%;
    margin-top: 20px;
-   margin-left: 50px;
+   margin-left: 70px;
 
    }
    .gallery2{
@@ -778,7 +779,7 @@ margin-left: 250px;
  
 @media (max-width: 500px) {
   .boxa{
-    width: 500px;
+    width: 450px;
     height: auto;
   }
   .boxa h3{
@@ -791,14 +792,14 @@ margin-left: 250px;
     display: flex;
     flex-direction: column;
     margin: 0px;
-    width: 500px;
+    width: 450px;
     height: fit-content;
    align-items: center;
   }
   .gallery2 >div{
     margin-left:0px;
     padding-left: 40px;
-    width: 500px;
+    width: 450px;
    align-items: center;
   }
 .gallery2 img {
@@ -886,7 +887,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;}
   .news img{align-items: center;
-    max-width: 400px;
+    max-width: 200px;
     padding-top: 20px;
     height: auto;
     padding-left: 0px;
@@ -957,7 +958,8 @@ input[type="checkbox"] {
  
  .intro{
   width: 500px;
-  height: 500px;
+  height: 350px;
+  margin-top: -75px;
 }
 
 .sx{
