@@ -79,8 +79,8 @@ z-index: 1;
 
   .sito{
     position: absolute;
-    bottom: 20%;
-    left: 0%;
+    top: 18%;
+    left: 2%;
   }
 
 
@@ -328,6 +328,15 @@ input{
   margin-right: 30%;
 }
 
+.img {
+  max-height: 10px;
+  max-width: 100%;
+}
+
+.img img{
+  object-fit: contain;
+}
+
 .image-container {
   margin-top: 200px;
   margin-left: 100px;
@@ -452,6 +461,10 @@ input{
   justify-content: space-between;
 }
 
+.curi{
+  align-items: center;
+}
+
 .curi h1{
   font-size: 25pt;
   width: 1000px;
@@ -466,7 +479,6 @@ input{
   margin: auto;
   margin-bottom: 20px;
   margin-left: 20%;
-
 }
 
 .imgcuri {
