@@ -83,7 +83,22 @@ z-index: 1;
     left: 2%;
   }
 
+.form{
+  position: relative;
+  left: -20%;
+  top: 40%;
+}
 
+.newsl{
+  position: relative;
+  left: -20%;
+  
+}
+
+.checklist h1{
+  position: sticky;
+  left: 10%;
+}
 }
 
 .dropdown a{
@@ -326,15 +341,6 @@ input{
 
 .newsl{
   margin-right: 30%;
-}
-
-.img {
-  max-height: 10px;
-  max-width: 100%;
-}
-
-.img img{
-  object-fit: contain;
 }
 
 .image-container {
