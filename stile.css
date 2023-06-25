@@ -71,9 +71,9 @@ z-index: 1;
     margin-left: 95%;
   }
 
-  .sito a{
-    position: fixed;
-    top: 3%;
+  .sito{
+    position: absolute;
+    bottom: 20%;
     left: 0%;
   }
 
@@ -124,7 +124,7 @@ z-index: 1;
   display: block;
   cursor: pointer;
   padding: 10px;
-  margin-left: 30px;
+  margin-left: 90%;
 }
 
 .hamburger-menu label span {
@@ -145,7 +145,8 @@ z-index: 1;
   list-style-type: none;
   background-color: #c5d3be;
   opacity: 85%;
-  position: fixed;
+  position: absolute;
+  margin-left: 20%;
 }
 
 .hamburger-menu-list li {
