@@ -287,9 +287,17 @@ form {
   flex-direction: column;
   gap: 50px;
   width: 700px;
-  margin: auto;
+  margin-left: 42%;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.invio{
+  margin-left: 10%;
+}
+
+.form{
+  margin: auto;
 }
 
 label {
