@@ -1,11 +1,193 @@
 body{
     font-family: 'Diphylleia', serif;
 }
+
+
+
+
+
+
+
+
+
+.logo{
+  margin-top: 5px ;
+}
+
+.sito a {
+  padding-left: 30%;
+  font-size: 30px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.menù a{
+  margin-right: 30%;
+}
+
+.dropdown {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.tendina{
+  display: flex;
+  padding-left: 100%;
+  width: max-content;
+  right: 5%;
+  top: 3.5%;
+  position:fixed;
+}
+
+.header{
+display: flex;
+align-items: baseline;
+background-color: white;
+z-index: 1;
+}
+
+@media only screen and (min-width: 500px) {
+  .dropdown {
+    display: block;
+  }
+
+  .sito a{
+    position: sticky;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dropdown {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-left: 95%;
+  }
+
+  .sito a{
+    position: fixed;
+    top: 3%;
+    left: 0%;
+  }
+
+
+}
+
+.dropdown a{
+  font-size: 20pt;
+  padding: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 18pt;
+  background-color: #c5d3be;
+  opacity: 85%;
+}
+
+.dropdown-content a:hover {
+  background-color: #c0c0c0;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger-menu input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger-menu label {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.hamburger-menu label span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin-bottom: 5px;
+}
+
+.hamburger-menu input[type="checkbox"]:checked + .hamburger-menu-list {
+  display: block;
+}
+
+.hamburger-menu-list {
+  display: none;
+  padding: 0;
+  list-style-type: none;
+  background-color: #c5d3be;
+  opacity: 85%;
+  position: fixed;
+}
+
+.hamburger-menu-list li {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.hamburger-menu-list li:last-child {
+  border-bottom: none;
+}
+
+.hamburger-menu-list a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hamburger-menu-list a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 500px) {
   body {
     font-size: 14px;
   }
 }
+
 header {
     position: fixed;
     display: flex;
@@ -17,39 +199,20 @@ header {
     background-color: white;
     z-index: 1;
 }
+
 @media (max-width:500px){
   header{
       height: 3%;
-      width: max-content;
       padding-bottom: 30px;
   }
-  header h1 {
-      font-size: 40px;
-  } header .button{
+
+  header .button{
       font-size: 15px;
   }
 }
 
-.menù {
-    display: flex;
-    margin-right: 50px;
-  }
- 
-
   #link a {
     margin: 15px;
-  }
-  .indoor .submenu {
-    display: none;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .indoor:hover .submenu {
-    display: block;
-    background-color:rgba(217, 217, 217, 0.45);
-    padding: 10px;
-    border-radius:  0 0 10px 10px;
   }
   
   .menù a {
@@ -58,6 +221,7 @@ header {
     margin-right: 20px;
     align-items: baseline;
   }
+
   @media (max-width: 500px) {
    .menù{
     display: flex;
@@ -68,88 +232,26 @@ header {
       font-size: 25px;      
     margin: 5px;
     }
-    .outdoor a {  
-      font-size: 25px;
-      margin-left: 10%;
-      margin: 5px;
-    }
-
-  }
-  .indoor .submenu a {
-    display: block;
   }
 
 nav a{
     font-size: 20pt;
   }
 
-  .outdoor {
-    position: relative;
-    display: inline-block;
-    margin-right: 100px;
-  }
-  
-  .outdoor .submenu2 {
-    display: none;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .outdoor:hover .submenu2 {
-    display: block;
-    
-    background-color: rgba(217, 217, 217, 0.45);   
-    padding: 10px;
-    border-radius:  0 0 10px 10px;
-  }
-  
-  .outdoor a {
-    text-decoration: none;
-    color: black;
-   /* padding: 8px 16px;*/
-  }
-  
-  .outdoor .submenu2 a {
-    display: block;
-  }
-
-  .outdoor a{
-    font-size: 20pt;
-  }
   @media (max-width: 500px) {
     .menù{
   
     text-align: center;
-    display: flex;
-  width: max-content;}
+    display: flex;}
+
     .menù a {  
       font-size: 16px;
       display: block;
       white-space: nowrap;
     text-align: center;
     }
-    .outdoor a {  
-      font-size: 16px;
-      display: block;
-      white-space: nowrap;
-    text-align: center;
-    }
-
   }
 
-.nome a{
-    font-size: 40px ;
-    padding: auto;
-    font-family: 'Diphylleia', serif;
-    margin-left: 100px;
-    margin-top: 100px;
-    text-decoration: none;
-    color: black;
-}
-@media (max-width: 500px) {
-  .nome a{   margin-left: -10px;
-  }
-}
 .boxc{
   text-align: center;
   margin-top: 50px;
