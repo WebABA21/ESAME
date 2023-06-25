@@ -57,7 +57,13 @@ z-index: 1;
   }
 
   .sito a{
-    position: sticky;
+    position: absolute;
+    left: -25%;
+    height: auto;
+  }
+
+  header{
+    height: 50px;
   }
 }
 
