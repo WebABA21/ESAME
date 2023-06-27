@@ -17,6 +17,19 @@ body{
   color: #000000;
 }
 
+.sito {
+display: flex;
+flex-direction: row;
+width: max-content;
+align-items: baseline;
+}
+
+.sito p{
+ left: 15%;
+ position: absolute;
+ font-style: italic;
+}
+
 .menù a{
   margin-right: 30%;
 }
@@ -75,6 +88,12 @@ z-index: 1;
     position: absolute;
     top: 18%;
     left: 2%;
+  }
+  .sito p{
+    display: none;
+  }
+  header{
+   padding: -10px;
   }
 
 .form{
@@ -184,16 +203,6 @@ z-index: 1;
   text-decoration: none;
   font-size: 14pt;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,6 +361,8 @@ input{
   height: auto;
 
 }
+
+
 
 .cerchio {
   width: 750px;
