@@ -57,7 +57,13 @@ z-index: 1;
   }
 
   .sito a{
-    position: sticky;
+    position: absolute;
+    left: -25%;
+    height: auto;
+  }
+
+  header{
+    height: 50px;
   }
 }
 
@@ -73,11 +79,26 @@ z-index: 1;
 
   .sito{
     position: absolute;
-    bottom: 20%;
-    left: 0%;
+    top: 18%;
+    left: 2%;
   }
 
+.form{
+  position: relative;
+  left: -20%;
+  top: 40%;
+}
 
+.newsl{
+  position: relative;
+  left: -20%;
+  
+}
+
+.checklist h1{
+  position: sticky;
+  left: 10%;
+}
 }
 
 .dropdown a{
@@ -446,6 +467,10 @@ input{
   justify-content: space-between;
 }
 
+.curi{
+  align-items: center;
+}
+
 .curi h1{
   font-size: 25pt;
   width: 100%;
@@ -460,7 +485,6 @@ input{
   margin: auto;
   margin-bottom: 2%;
   margin-left: 20%;
-
 }
 
 .imgcuri {
