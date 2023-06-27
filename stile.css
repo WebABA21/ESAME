@@ -390,14 +390,14 @@ input{
 
 .org p{
   font-size: 16pt;
-  width: 800px;
+  width: 80%;
   margin: auto;
   margin-bottom: 10px;
 }
 
 .cura h1{
   font-size: 25pt;
-  width: 1000px;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   margin-left: 10%;
@@ -405,9 +405,9 @@ input{
 
 .cura p{
   font-size: 16pt;
-  width: 800px;
+  width: 70%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   margin-left: 20%;
 }
 
@@ -448,7 +448,7 @@ input{
 
 .curi h1{
   font-size: 25pt;
-  width: 1000px;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   margin-left: 10%;
@@ -456,9 +456,9 @@ input{
 
 .curi p{
   font-size: 16pt;
-  width: 800px;
+  width: 70%;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   margin-left: 20%;
 
 }
